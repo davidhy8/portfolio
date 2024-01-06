@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <title>David Yang's Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/ceeca86262.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Resume</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-text">
+                    <p>Data Scientist</p>
+                    <h1>Hi, I'm <span>David</span> <br> Yang from Canada</h1>
+                </div>
+            </div>
+        </div>
+        <!---------------about---------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/david_outdoor.HEIC">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p> My name is David Yang and I am a graduating statistics Masters student with a strong desire to learn and passion for data.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Data analysis</span><br>Exploratory analysis</li>
+                                <li><span>Data visualization</span><br>Exploratory analysis</li>
+                                <li><span>Machine learning</span><br>Exploratory analysis</li>
+                                <li><span>Data cleaning</span><br>Exploratory analysis</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2023-Current</span><br>Automation Developer at ADM Lucid Solutions Inc.</li>
+                                <li><span>2021-Current</span><br>Research Analyst at University of Calgary</li>
+                                <li><span>2023</span><br>Teaching Assistant at University of Calgary</li>
+                                <li><span>2017-2021</span><br>Chief Information Officer at COUHR</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2021-Current</span><br>Msc. Mathematics and statistics from University of Calgary</li>
+                                <li><span>2017-2021</span><br>Bsc. Honours Biology from University of Calgary</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- -----------portfolio------------ -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.png">
+                        <div class="layer">
+                            <h3>Exploratory analysis</h3>
+                            <p>RNAseq analysis of Rhesus Macaque Monkeys</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-2.png">
+                        <div class="layer">
+                            <h3>Weighted sampling</h3>
+                            <p>RNAseq analysis of Rhesus Macaque Monkeys</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/work-3.png">
+                        <div class="layer">
+                            <h3>Parallelization</h3>
+                            <p>RNAseq analysis of Rhesus Macaque Monkeys</p>
+                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="btn"> See more</a>
+            </div>
+        </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+        </script>
+    </body>
+</html>
