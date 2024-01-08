@@ -241,6 +241,16 @@ nav ul li a:hover::after{
     }
 }
 
+/* ------------ resume --------------- */
+#resume{
+    padding: 50px 0;
+    font-size: 40px;
+}
+
+.resume-file{
+    padding: 25px;
+}
+
 /* -- smaller screens ------- */
 
 nav .fas{

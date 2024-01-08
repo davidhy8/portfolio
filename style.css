@@ -70,6 +70,7 @@ nav ul li a:hover::after{
     font-size: 60px;
     margin-top: 20px;
 }
+
 .header-text h1 span{
     color: #ff004f;
 }
@@ -87,6 +88,11 @@ nav ul li a:hover::after{
 .about-col-1{
     flex-basis: 35%;
 }
+
+.about-col-1 img{
+    margin-top: 30px;
+}
+
 .about-col-1 img{
     width: 100%;
     border-radius: 15px;
@@ -112,7 +118,7 @@ nav ul li a:hover::after{
 
 .tab-links{
     margin-right: 50px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
@@ -135,12 +141,13 @@ nav ul li a:hover::after{
 
 .tab-contents ul li{
     list-style: none;
+    font-size: 14px;
     margin: 10px 0;
 }
 
 .tab-contents ul li span{
     color: #b54769;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .tab-contents{
