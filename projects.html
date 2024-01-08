@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale-1.0, user-scalable=no">
+        <title>Document</title>
+        <title>David Yang's Portfolio</title>
+        <link rel="stylesheet" href="style_projects.css">
+        <link rel="shortcut icon" href="images/logo.png">
+        <script src="https://kit.fontawesome.com/ceeca86262.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.png" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="index.html#header">Home</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#resume">Resume</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                        <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+            </div>
+        </div>
+
+        <section id="projects"></section>
+
+        <!--heading----------->
+        <div class="projects-heading">
+            <span>David Yang</span>
+            <h3>My projects</h3>
+        </div>
+
+        <!-- project container ----------->
+        <div class="projects-container">
+           
+            <!-- box-1-->
+            <div class="projects-box">
+                <div class="projects-img">
+                    <img src="images/work-1.png" alt="Projects">
+                </div>
+
+                <div class="projects-text">
+                    <span>Date / Project Category</span>
+                    <a href="#" class="projects-title"> This the is the title of the project</a>
+                    <p>Some description for the project and stuff</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+
+            <!-- box-2-->
+            <div class="projects-box">
+                <div class="projects-img">
+                    <img src="images/work-2.png" alt="Projects">
+                </div>
+
+                <div class="projects-text">
+                    <span>Date / Project Category</span>
+                    <a href="#" class="projects-title"> This the is the title of the project</a>
+                    <p>Some description for the project and stuff</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+
+            <!-- box-3-->
+            <div class="projects-box">
+                <div class="projects-img">
+                    <img src="images/work-3.png" alt="Projects">
+                </div>
+
+                <div class="projects-text">
+                    <span>Date / Project Category</span>
+                    <a href="#" class="projects-title"> This the is the title of the project</a>
+                    <p>Some description for the project and stuff</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+    
+
+</html>
