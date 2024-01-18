@@ -166,7 +166,7 @@ nav ul li a:hover::after{
 
 .projects-img{
     width: 100%;
-    height: auto;
+    height: 30vh;
 }
 
 .projects-img img{
