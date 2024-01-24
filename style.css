@@ -27,7 +27,8 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(images/background.jpeg);
+    /* background-image: url(images/background.jpeg);*/
+    background-color: #080808;
     background-size: cover;
     background-position: center;
 }
@@ -342,7 +343,8 @@ nav .fas{
 
 @media only screen and (max-width: 600px){
     #header{
-        background-image: url(images/background.jpeg);
+        /* background-image: url(images/background.jpeg); */
+        background-color: #080808;
     }
 
     .header-text{
