@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <title>David Yang's Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="files/logo_black.png">
+        <script src="https://kit.fontawesome.com/ceeca86262.js" crossorigin="anonymous"></script>
+    </head>
+
+    <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+        <p class="tab-links" onclick="opentab('education')">Education</p>
+        <p class="tab-links" onclick="opentab('honors')">Honors and Awards</p>
+    </div>
+
+    <div class="tab-contents active-tab" id="skills">
+        <ul>
+            <li><span>Data cleaning & preprocessing</span><br>Expertise in cleaning and preprocessing complex datasets to ensure accuracy and reliability in analysis, vital for robust decision-making.</li>
+            <li><span>Statistical & Data analysis</span><br>Proficient in applying advanced statistical techniques to derive meaningful insights from complex datasets, with a focus on biological data.</li>
+            <li><span>Machine learning</span><br>Adept at applying diverse machine learning algorithms to extract actionable insights from complex datasets, enhancing the effectiveness of data-driven solutions.</li>
+            <li><span>Data visualization</span><br>Skilled in creating visually compelling representations of data using tools like Matplotlib and Seaborn, enhancing communication of findings.</li>
+        </ul>
+    </div>
+
+    <div class="tab-contents" id="experience">
+        <img src="files/experience.svg">
+    </div>
+
+    <div class="tab-contents" id="education">
+        <ul>
+            <li><span>2021-2024</span><br>Msc. Mathematics and Statistics from University of Calgary</li>
+            <li><span>2017-2021</span><br>Bsc. Honours Biology from University of Calgary</li>
+            <li><span>Certificate</span><br>Neural Networks and Deep learing - DeepLearning.ai</li>
+        </ul>
+    </div>
+
+    <div class="tab-contents" id="honors">
+        <ul>
+            <li><span>2021-2023</span><br>Alberta Innovates Graduate Student Scholarship</li>
+            <li><span>2021</span><br>Faculty of Graduate Studies Master's Scholarship, Dean's list</li>
+            <li><span>2020</span><br>Louise McKinney Scholarship, Students' Union Campus Involvement Award, Dean's list</li>
+            <li><span>2019</span><br>Jason Lang Scholarship, Dean's list</li>
+            <li><span>2018</span><br>Alberta Innovates Summer Studentship, University of Calgary Undergraduate Merit Award, Jason Lang Scholarship, Dean's list</li>
+            <li><span>2017</span><br>President's Admission Scholarship, Bill and Mae Parker Health Sciences Bursary, Alexander Rutherford Scholarship, Dean's list</li>
+        </ul>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+
+</html>

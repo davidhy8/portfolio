@@ -7,28 +7,43 @@
         <title>Document</title>
         <title>David Yang's Portfolio Website</title>
         <link rel="stylesheet" href="style.css">
-        <link rel="shortcut icon" href="images/logo.png">
+        <link rel="shortcut icon" href="files/logo_black.png">
         <script src="https://kit.fontawesome.com/ceeca86262.js" crossorigin="anonymous"></script>
     </head>
 
+    <!---------------main section---------------->
     <body>
         <div id="header">
             <div class="container">
                 <nav>
-                    <img src="images/logo.png" class="logo">
+                    <img src="files/logo_black.png" class="logo">
                     <ul id="sidemenu">
                         <li><a href="#header">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                        <li><a href="Resume.pdf">Resume</a></li>
+                        <li><a href="#blog">Blog</a></li>
                         <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
                     </ul>
                     <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
                 </nav>
-                <div class="header-text">
-                    <p>Data Scientist & Bioinformatician</p>
-                    <h1>Hi, I'm <span>David Yang</span>, <br>welcome to my website!</h1>
+                <div class="row">
+                    <div class="main-col-1">
+                        <div class="header-text">
+                            <h1><span>David Yang</span></h1>
+                            <p>Data Scientist & Machine Learning Engineer</p>
+                        </div>
+                        <div class="social-icons">
+                            <a href="https://github.com/davidhy8/"><i class="fa-brands fa-github"></i></a>
+                            <a href="files/Resume.pdf"><i class="fa-solid fa-file"></i></a>
+                            <a href="https://www.linkedin.com/in/david-h-yang/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://twitter.com/davidhenryyang"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="mailto:davidheweiyang@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+
+                        </div>
+                    </div>
+                    <div class="main-col-2">
+                        <img src='files/david_cartoon.jpg' onmouseover="this.src='files/david_cartoon_smile.jpg';" onmouseout="this.src='files/david_cartoon.jpg';" />
+                    </div>
                 </div>
             </div>
         </div>
@@ -36,172 +51,210 @@
         <!---------------about---------------->
         <div id="about">
             <div class="container">
-                <div class="row">
-                    <div class="about-col-1">
-                        <img src="images/david_profile.jpeg">
-                    </div>
-                    <div class="about-col-2">
-                        <h1 class="sub-title">About Me</h1>
-                        <p>As a recent graduate holding a master's degree in Statistics and a bachelor's degree in Biology, I bring a unique blend of analytical prowess and biological insight to the realm of data science. My portfolio showcases a series of impactful projects, demonstrating my proficiency in coding and its application in solving real-world problems, particularly those rooted in biological data. Driven by an insatiable curiosity and a passion for learning, I am adept at swiftly adapting to new challenges and technologies.</p> 
-                        <p>Outside of this, I am passionate about music, reading, financial markets, and sports.</p>
-
-                        <div class="tab-titles">
-                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
-                            <p class="tab-links" onclick="opentab('education')">Education</p>
-                            <p class="tab-links" onclick="opentab('honors')">Honors and Awards</p>
-                        </div>
-                        <div class="tab-contents active-tab" id="skills">
-                            <ul>
-                                <li><span>Data cleaning & preprocessing</span><br>Expertise in cleaning and preprocessing complex datasets to ensure accuracy and reliability in analysis, vital for robust decision-making.</li>
-                                <li><span>Statistical & Data analysis</span><br>Proficient in applying advanced statistical techniques to derive meaningful insights from complex datasets, with a focus on biological data.</li>
-                                <li><span>Machine learning</span><br>Adept at applying diverse machine learning algorithms to extract actionable insights from complex datasets, enhancing the effectiveness of data-driven solutions.</li>
-                                <li><span>Data visualization</span><br>Skilled in creating visually compelling representations of data using tools like Matplotlib and Seaborn, enhancing communication of findings.</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="experience">
-                            <ul>
-                                <li><span>2021-Current</span><br>Graduate Researcher at University of Calgary</li>
-                                <li><span>2023-Current</span><br>Web Automation Developer at ADM Lucid Solutions Inc. (part-time)</li>
-                                <li><span>2023</span><br>Teaching Assistant at University of Calgary</li>
-                                <li><span>2018-2021</span><br>Undergraduate Researcher at University of Calgary</li>
-                                <li><span>2018-2021</span><br>Co-founder & Chief Information Officer at <a href="https://www.couhr.ca/" target="_blank">COUHR</a></li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="education">
-                            <ul>
-                                <li><span>2021-2024</span><br>Msc. Mathematics and Statistics from University of Calgary</li>
-                                <li><span>2017-2021</span><br>Bsc. Honours Biology from University of Calgary</li>
-                                <li><span>Certificate</span><br>Neural Networks and Deep learing - DeepLearning.ai</li>
-                            </ul>
-                        </div>
-                        <div class="tab-contents" id="honors">
-                            <ul>
-                                <li><span>2021-2023</span><br>Alberta Innovates Graduate Student Scholarship</li>
-                                <li><span>2021</span><br>Faculty of Graduate Studies Master's Scholarship, Dean's list</li>
-                                <li><span>2020</span><br>Louise McKinney Scholarship, Students' Union Campus Involvement Award, Dean's list</li>
-                                <li><span>2019</span><br>Jason Lang Scholarship, Dean's list</li>
-                                <li><span>2018</span><br>Alberta Innovates Summer Studentship, University of Calgary Undergraduate Merit Award, Jason Lang Scholarship, Dean's list</li>
-                                <li><span>2017</span><br>President's Admission Scholarship, Bill and Mae Parker Health Sciences Bursary, Alexander Rutherford Scholarship, Dean's list</li>
-                            </ul>
-                        </div>
-                    </div>
+                <h1 class="sub-title">About</h1>
+                <br>
+                <p>Hi, I'm David! I am an data scientist and machine learning engineer with a diverse 
+                    background in statistics and biology. Equipped with a <span class="red-text">MSc. in Statistics </span> 
+                    and a <span class="red-text">BSc. in Cellular, Molecular and Microbial Biology</span>,
+                     I specialize in deriving meaningful and significant insights from biological data. My expertise 
+                     lies in processing complex and noisy datasets, deriving insights through statistical methods, 
+                     and predictive modelling with techniques such as machine learning and regression. As a firm 
+                     believer that biotechnology and artificial intelligence will revolutionize our time,
+                      I hope to innovate and build our future with like-minded individuals<span id="dots">...</span>
+                </p>
+                <div id="more">
+                    <p>I'm fascinated by artificial intelligence, finance, music, and playing basketball and 
+                        volleyball
+                    </p>
                 </div>
+                <br>
+                <br>
+                <button onclick="readMore()" id="button-more">Read more</button>
+                <!-- <a href="about.html"><button id="button-more" role="button">Read more</button></a> -->
             </div>
         </div>
 
         <!-- -----------portfolio------------ -->
         <div id="portfolio">
             <div class="container">
-                <h1 class="sub-title">Project spotlight</h1>
-                <div class="work-list">
-                    <div class="work">
-                        <img src="images/monkey-min.jpg">
-                        <div class="layer">
-                            <h3>Exploratory analysis</h3>
-                            <p>RNAseq and metabolomic analyses of Rhesus Macaque DNA and metabolite concentrations</p>
-                            <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                <h1 class="sub-title">Portfolio</h1>
+                
+                <div class="filteredList">
+                    <button class="button-filter-all" data-filter="*" tabindex="-1">All</button>
+                    <button class="button-filter-dev" data-filter="category-dev" tabindex="-1">Development</button>
+                    <button class="button-filter-ml" data-filter="category-ml" tabindex="-1">Machine learning</button> 
+                    <button class="button-filter-research" data-filter="category-research" tabindex="-1">Research</button>  
+                    <button class="button-filter-sa" data-filter="category-sa" tabindex="-1">Statistical Analysis</button>  
+
+                    <div class="row category-dev category-ml">
+                        <div class="project-col-1">
+                            <h3>NBA Wizard</h3>
+                            <p><span id="dev">Development</span>  <span id="ml"> Machine learning</span></p>
+                        </div>
+                        <div class="project-col-2">
+                            <p>Python Flask web application that web-scrapes and preprocesses >8000 games of NBA data using BeautifulSoup and 
+                                trains a neural network (scikit-learn, TensorFlow) to predict NBA win-loss with ~60% accuracy.</p>
+                            <div class="project-icons">
+                                <a href="https://github.com/davidhy8/nba-predictions"><i class="fa-solid fa-code"></i><span> Code</span></a>
+                                <a href=""><i class="fa-solid fa-display"></i><span> Demo</span></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="work">
-                        <img src="images/weighted.jpg">
-                        <div class="layer">
-                            <h3>Representative sampling</h3>
-                            <p>Novel targeted subsampling of SARS-CoV-2 genome sequence ensembles using genomic epidemiological information</p>
-                            <a href="projects/Honours.pdf"><i class="fas fa-external-link-alt"></i></a>
+
+                    <div class="row category-research category-ml category-sa">
+                        <div class="project-col-1">
+                            <h3>Exploratory Analysis of Rhesus Macaque Data</h3>
+                            <p><span id="research">Research</span>  <span id="ml"> Machine learning</span><span class="brmedium"></span><span id="sa">Statistical Analysis</span></p>
+                        </div>
+                        <div class="project-col-2">
+                            <p>1. Pinpointed around 50 out of >30,000 important genomic factors related to Glaucoma disease in Rhesus Macaque monkeys via R by employing dimensionality reduction, data wrangling, and statistical testing techniques on noisy biological datasets (RNA sequencing & Metabolomics) with high dimensionality and multi-collinearity.</p>
+                            <p>2. Generated scientific figures using data visualization libraries in R which elucidated key research findings from exploratory data analysis to external institutions leading to the receival of monetary grants valuing greater than $100,000.</p>
+                            <div class="project-icons">
+                                <a href="https://github.com/davidhy8/exploratory-macaque"><i class="fa-solid fa-code"></i><span> Code</span></a>
+                                <a href="https://www.amandamelin.com/research"><i class="fa-solid fa-file-lines"></i><span> Paper</span></a>
+                            </div>
                         </div>
                     </div>
-                    <div class="work">
-                        <img src="images/parallelization.png">
-                        <div class="layer">
-                            <h3>Algorithm optimization</h3>
-                            <p>Parallelization of Monte Carlo Markov Chain algorithm for Bayesian phylogenetic analysis.</p>
-                            <a href="projects/Thesis.pdf"><i class="fas fa-external-link-alt"></i></a>
+
+                    <div class="row category-research category-dev category-sa">
+                        <div class="project-col-1">
+                            <h3>Algorithmic paralellization for Evolutionary Analysis</h3>
+                            <p><span id="research">Research</span>  <span id="dev"> Development</span><span class="brmedium"></span><span id="sa">Statistical Analysis</span></p>
+                        </div>
+                        <div class="project-col-2">
+                            <p>Created an asynchronous parallelization method for the Markov chain Monte Carlo (MCMC) Algorithm involved in Bayesian inference (evolutionary) which reduced computational run-times by more than 2900% (~84 days).</p>
+                            <div class="project-icons">
+                                <a href="https://github.com/davidhy8/parallel-phylogenetics"><i class="fa-solid fa-code"></i><span> Code</span></a>
+                                <a href="files/Thesis.pdf"><i class="fa-solid fa-file-lines"></i><span> Paper</span></a>
+                                <a href="files/BioNet.pdf"><i class="fa-solid fa-file-powerpoint"></i><span> Presentation</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row category-ml">
+                        <div class="project-col-1">
+                            <h3>Convolutional Neural Network for Cat vs Dog Image Classification</h3>
+                            <p><span id="ml"> Machine learning</span></p>
+                        </div>
+                        <div class="project-col-2">
+                            <p>Developed and deployed a convolutional neural network with TensorFlow that performs repurposed image classification by building upon a model pretrained on the ImageNet dataset via transfer learning with 98% accuracy.</p>
+                            <div class="project-icons">
+                                <a href="https://github.com/davidhy8/classwork/blob/main/deep-learning/cat_vs_dog_classifier.ipynb"><i class="fa-solid fa-code"></i><span> Code</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row category-research category-dev category-sa">
+                        <div class="project-col-1">
+                            <h3>Unravelling the truth behind COVID-19</h3>
+                            <p><span id="research">Research</span>  <span id="dev"> Development</span><span class="brmedium"></span><span id="sa">Statistical Analysis</span></p>
+                        </div>
+                        <div class="project-col-2">
+                            <p>1. Identified sampling bias in SARS-CoV-2 sequence collection by analyzing and visualizing COVID-19 data via Python & R Shiny.</p>
+                            <p>2. Devised a novel representative sampling strategy based on scientific deductions of COVID-19 and implemented a data pipeline involving Python and Perl which reduced sampling bias during SARS-CoV-2 sequence selection (n = >2 million) by around 100%.</p>
+                            <div class="project-icons">
+                                <a href="https://github.com/davidhy8/covid-truth"><i class="fa-solid fa-code"></i><span> Code</span></a>
+                                <a href="files/Honours.pdf"><i class="fa-solid fa-file-lines"></i><span> Paper</span></a>
+                                <a href="files/RIP.pdf"><i class="fa-solid fa-file-powerpoint"></i><span> Presentation</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row category-ml category-sa">
+                        <div class="project-col-1">
+                            <h3>Regression analysis on clinical data for heart disease</h3>
+                            <p><span id="ml">Machine Learning</span>    <span id="sa">Statistical Analysis</span></p>
+                        </div>
+                        <div class="project-col-2">
+                            <p>Engineered logistic and lasso regression (i.e. data preprocessing, data visualization, feature selection & model evaluation) 
+                                predictive models in R for a clinical dataset with ~90% accuracy when evaluated with cross-validation.</p>
+                            <div class="project-icons">
+                                <a href="https://github.com/davidhy8/heart-regression"><i class="fa-solid fa-code"></i><span> Code</span></a>
+                                <a href="files/Heart-Regression-Paper.pdf"><i class="fa-solid fa-file-lines"></i><span> Report</span></a>
+                                <a href="files/Heart-Regression-Slides.pdf"><i class="fa-solid fa-file-powerpoint"></i><span> Presentation</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row category-dev">
+                        <div class="project-col-1">
+                            <h3>Battleship</h3>
+                            <p><span id="dev">Development</span></p>
+                        </div>
+                        <div class="project-col-2">
+                            <p>Battleship game with single player (with computer) and two player options designed with Java and 
+                                Junit test cases.</p>
+                            <div class="project-icons">
+                                <a href="https://github.com/davidhy8/battleship"><i class="fa-solid fa-code"></i><span> Code</span></a>
+                                <a href=""><i class="fa-solid fa-display"></i><span> Demo</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row category-sa">
+                        <div class="project-col-1">
+                            <h3>Bayesian Inference of Zero-Inflated Dataset</h3>
+                            <p><span id="ml">Machine Learning</span></p>
+                        </div>
+                        <div class="project-col-2">
+                            <p>Programmed custom Bayesian statistical models in R using OpenBUGS to statistically model zero-inflated datasets 
+                                by approximation with the Gibbs sampling algorithm implemented from scratch.</p>
+                            <div class="project-icons">
+                                <a href="https://github.com/davidhy8/zip-bayesian-model"><i class="fa-solid fa-code"></i><span> Code</span></a>
+                                <a href="files/ZIP-report.pdf"><i class="fa-solid fa-file-lines"></i><span> Report</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row category-dev">
+                        <div class="project-col-1">
+                            <h3>Python Mini Games</h3>
+                            <p><span id="dev">Development</span></p>
+                        </div>
+                        <div class="project-col-2">
+                            <p>1. Chasing Alice Game: A turn-based game where you control a blue turtle, Alex, to chase and catch, a red turtle, Alice.</p>
+                            <p>2. The Game of Nuts: In the game of nuts there is a pile of nuts on a board. There are two players. On their turn, each player picks up 1 to 3 nuts. 
+                                The one who has to pick the final nut will be the loser.
+                            </p>
+                            <p>3. Rush Hour Game: Computer version of a game popularly known as Rush Hour, manufactured by ThinkFun.</p>
+                            <div class="project-icons">
+                                <a href="https://github.com/davidhy8/python-mini-games"><i class="fa-solid fa-code"></i><span> Code</span></a>
+                                <a href=""><i class="fa-solid fa-display"></i><span> Demo</span></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <a href="projects.html" class="btn"> See more</a>
             </div>
         </div>
-        
-        <!-- --------contact--------- -->
-        <div id="contact">
+
+        <div id="blog">
             <div class="container">
-                <div class="row">
-                    <div class="contact-left">
-                        <h1 class="sub-title">Contact Me</h1>
-                        <p><i class="fa-solid fa-paper-plane"></i> davidheweiyang@gmail.com</p>
-                        <p><i class="fa-solid fa-square-phone"></i> 587-889-2618</p>
-                        <div class="social-icons">
-                            <a href="https://www.linkedin.com/in/david-h-yang/"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://github.com/davidhy8/"><i class="fa-brands fa-github"></i></a>
-                            <a href="mailto:davidheweiyang@gmail.com"><i class="fa-solid fa-envelope"></i></a>
-                        </div>
-                        <a href="images/Resume.pdf" download class="btn btn2">Download Resume</a>
-                    </div>
-                    <div class="contact-right">
-                        <form name="submit-to-google-sheet">
-                            <input type="text" name="Name" placeholder="Your Name" required>
-                            <input type="text" name="email" placeholder="Your email" required>
-                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                            <button type="submit" class="btn btn2">Submit</button>
-                        </form>
-                        <span id="msg"></span>
-                    </div>
-                </div>
-            </div>
-            <div class="copyright">
-                <p>Copyright © David</p>
+                <h1 class="sub-title">Blog</h1>
+                <br>
+                <p>No posts at the moment.</p>
             </div>
         </div>
 
-        <script>
-            var tablinks = document.getElementsByClassName("tab-links");
-            var tabcontents = document.getElementsByClassName("tab-contents");
-
-            function opentab(tabname){
-                for(tablink of tablinks){
-                    tablink.classList.remove("active-link");
-                }
-                for(tabcontent of tabcontents){
-                    tabcontent.classList.remove("active-tab");
-                }
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabname).classList.add("active-tab")
-            }
-
-        </script>
+        <div class="copyright">
+            <p>Copyright © 2024 David Yang</p>
+        </div>
 
         <script>
-            var sidemenu = document.getElementById("sidemenu");
+            function readMore() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("button-more");
 
-            function openmenu(){
-                sidemenu.style.right = "0";
-            }
-
-            function closemenu(){
-                sidemenu.style.right = "-200px"
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more";
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less";
+                    moreText.style.display = "inline";
+                }
             }
         </script>
-
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbztt9lqVuMiX-Gc_zYgCNVNayXUguGOoDlBc2h2XKzE6YMFBLILViDIeP0miyFzbdBfig/exec'
-        const form = document.forms['submit-to-google-sheet']
-        const msg = document.getElementById("msg")
-    
-        form.addEventListener('submit', e => {
-        e.preventDefault()
-        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => {
-                msg.innerHTML = "Thank you for your interest!"
-                setTimeout(function(){
-                    msg.innerHTML = ""
-                }, 5000)
-                form.reset()
-            })
-            .catch(error => console.error('Error!', error.message))
-        })
-    </script>
-    
     </body>
 </html>
