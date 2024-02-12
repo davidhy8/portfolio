@@ -172,6 +172,10 @@ nav ul li a:hover::after{
     width: 100%;
 }
 
+.about-heading{
+    color:#FFFFFF
+}
+
 .tab-titles{
     display: flex;
     margin: 30px 0 20px;
