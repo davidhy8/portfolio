@@ -237,7 +237,7 @@ button[data-filter="category-dev"]:focus ~ div:not([class*="category-dev"]) {
     display:none;
 }
   
-button[data-filter="category-ml"]:focus ~ div:not([class*="category-ml"]) {
+button[data-filter="category-ds"]:focus ~ div:not([class*="category-ds"]) {
     display:none;
 }
   
@@ -245,7 +245,7 @@ button[data-filter="category-research"]:focus ~ div:not([class*="category-resear
     display:none;
 }
 
-button[data-filter="category-sa"]:focus ~ div:not([class*="category-sa"]) {
+button[data-filter="category-other"]:focus ~ div:not([class*="category-other"]) {
     display:none;
 }
 
@@ -285,7 +285,7 @@ button[data-filter="category-sa"]:focus ~ div:not([class*="category-sa"]) {
     padding-bottom: 0.5%;
 }
 
-.project-col-1 #ml{
+.project-col-1 #ds{
     background-color: #e9c46a;
     border-radius: 5px;
     padding-right: 1%;
@@ -303,7 +303,7 @@ button[data-filter="category-sa"]:focus ~ div:not([class*="category-sa"]) {
     padding-bottom: 0.5%;
 }
 
-.project-col-1 #sa{
+.project-col-1 #other{
     background-color: #f4a261;
     border-radius: 5px;
     padding-right: 1%;
@@ -515,7 +515,7 @@ button[data-filter="category-sa"]:focus ~ div:not([class*="category-sa"]) {
   
 /* ------------ filter machine learning button ------------------------------ */
 
-.button-filter-ml {
+.button-filter-ds {
     align-items: center;
     background-color: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -546,20 +546,20 @@ button[data-filter="category-sa"]:focus ~ div:not([class*="category-sa"]) {
     width: auto;
   }
   
-  .button-filter-ml:hover,
-  .button-filter-ml:focus {
+  .button-filter-ds:hover,
+  .button-filter-ds:focus {
     border-color: rgba(0, 0, 0, 0.15);
     box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
     color: rgba(0, 0, 0, 0.65);
     background-color: #e9c46a;
   }
   
-  .button-filter-ml:hover {
+  .button-filter-ds:hover {
     transform: translateY(-1px);
     background: #e9c46a;
   }
 
-  .button-filter-ml:active {
+  .button-filter-ds:active {
     background-color: #e9c46a;
     border-color: rgba(0, 0, 0, 0.15);
     box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
@@ -623,7 +623,7 @@ button[data-filter="category-sa"]:focus ~ div:not([class*="category-sa"]) {
 
   /* ------------ filter statistical analysis button ------------------------------ */
 
-.button-filter-sa {
+.button-filter-other {
     align-items: center;
     background-color: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -654,20 +654,20 @@ button[data-filter="category-sa"]:focus ~ div:not([class*="category-sa"]) {
     width: auto;
   }
   
-  .button-filter-sa:hover,
-  .button-filter-sa:focus {
+  .button-filter-other:hover,
+  .button-filter-other:focus {
     border-color: rgba(0, 0, 0, 0.15);
     box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
     color: rgba(0, 0, 0, 0.65);
     background-color: #f4a261;
   }
   
-  .button-filter-sa:hover {
+  .button-filter-other:hover {
     transform: translateY(-1px);
     background: #f4a261;
   }
 
-  .button-filter-sa:active {
+  .button-filter-other:active {
     background-color: #f4a261;
     border-color: rgba(0, 0, 0, 0.15);
     box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
