@@ -82,6 +82,11 @@ nav ul li a:hover::after{
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 20px;
+    transition: transform .2s;
+}
+
+.row:hover {
+    transform: scale(1.05);
 }
 
 .header-text{
