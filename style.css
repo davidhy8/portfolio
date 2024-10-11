@@ -169,7 +169,7 @@ nav ul li a:hover::after{
     position: absolute;
     left: 0;
     bottom: -2px;
-    transition: 0.5s;
+    transition: 0.8s;
 
 }
 
@@ -791,4 +791,46 @@ nav .fas{
     color: #61b752;
     margin-top: -40px;
     display: block;
+}
+
+/* ------------------ Blog ------------------- */
+/* Blog Section Styles */
+#blog {
+    padding: 50px 0;
+}
+
+/* Blog Post Styles Consistent with Portfolio */
+.blog-post {
+    margin-bottom: 40px;
+    padding: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.blog-title {
+    font-size: 20px;
+    padding-bottom: 5%;
+}
+
+.blog-date {
+    font-size: 12px;
+    color: #ababab;
+}
+
+.blog-description {
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #555; /* Adjust to match your portfolio's text color */
+}
+
+.blog-link {
+    font-size: 1rem;
+    color: #007bff;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.blog-link:hover {
+    border-bottom: 1px solid #007bff;
 }
